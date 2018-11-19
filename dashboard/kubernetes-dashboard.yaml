@@ -60,7 +60,7 @@ spec:
       containers:
       - name: kubernetes-dashboard
         image: k8s.gcr.io/dashboard:v1.8.3
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Never
         ports:
         - containerPort: 8443
           protocol: TCP
