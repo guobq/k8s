@@ -145,8 +145,8 @@ spec:
       - name: tmp-volume
         emptyDir: {}
       serviceAccountName: kubernetes-dashboard
-      nodeSelector:
-        node-role.kubernetes.io/master: "true"
+      #nodeSelector:
+      #  node-role.kubernetes.io/master: "true"
       # Comment the following tolerations if Dashboard must not be deployed on master
       tolerations:
       - key: node-role.kubernetes.io/master
