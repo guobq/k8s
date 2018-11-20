@@ -114,7 +114,7 @@ spec:
     spec:
       containers:
       - name: kubernetes-dashboard
-        image: dashboard:v1.8.3
+        image: k8s.gcr.io/kubernetes-dashboard:v1.8.3
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8443
